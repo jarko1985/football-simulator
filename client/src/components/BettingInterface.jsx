@@ -64,7 +64,7 @@ const BettingInterface = ({
   const handleLogout = async () => {
     try {
       await axios.post(
-        "https://football-simulator-backend.onrender.com/api/auth/logout",
+        "http://localhost:3001/api/auth/logout",
         {},
         { withCredentials: true }
       );

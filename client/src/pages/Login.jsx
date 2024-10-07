@@ -11,13 +11,9 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(
-        "https://football-simulator-backend.onrender.com/api/auth/login",
-        formData,
-        {
-          withCredentials: true,
-        }
-      );
+      await axios.post("http://localhost:3001/api/auth/login", formData, {
+        withCredentials: true,
+      });
       alert("Login successful");
       navigate("/dashboard");
     } catch (err) {

@@ -14,10 +14,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(
-        "https://football-simulator-backend.onrender.com/api/auth/register",
-        formData
-      );
+      await axios.post("http://localhost:3001/api/auth/register", formData);
       alert("User registered successfully");
       navigate("/login");
     } catch (err) {
