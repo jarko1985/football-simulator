@@ -16,7 +16,7 @@ This is a real-time football betting system built using the MERN stack (MongoDB,
 
 1. **Clone the repository**:
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/jarko1985/football-simulator.git
 2. Navigate to the server directory and install dependencies:
    ```bash
    cd server
