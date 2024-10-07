@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 import BettingInterface from "../components/BettingInterface";
 import toast, { Toaster } from "react-hot-toast";
 
-const socket = io("http://localhost:3001");
+const socket = io("https://football-simulator-backend.onrender.com");
 
 const Dashboard = () => {
   const canvasRef = useRef(null);
@@ -37,7 +37,7 @@ const Dashboard = () => {
     const fetchDashboard = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3001/api/auth/dashboard",
+          "https://football-simulator-backend.onrender.com/api/auth/dashboard",
           {
             withCredentials: true,
           }
